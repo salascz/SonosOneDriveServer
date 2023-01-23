@@ -485,7 +485,7 @@ public class SonosService implements SonosSoap {
         MediaList ml = new MediaList();
         
 		if(parameters.getId().equals("root")) {						
-			String path = DRIVE_ROOT+"/children";
+			String path = DRIVE_ROOT+":/Music:/children";
 			
 			if(isAppFolder()) {
 				path = DRIVE_APPFOLDER+"/children";
