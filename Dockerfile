@@ -9,6 +9,7 @@ RUN apt-get install maven -y
 
 ADD . /src
 
+RUN mvn versions:use-latest-releases -Dincludes=org.apache.commons:commons-text
 RUN mvn clean install package
 
 EXPOSE $PORT
